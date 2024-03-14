@@ -29,7 +29,7 @@ export const InicioPage = () => {
                   OLVIDATE DE LAS <br/>
                   MENSUALIDADES
                 </h2>
-                <h2 style={{fontFamily: 'Roboto', fontSize: '96%', fontWeight: 400}} className='mt-5'>
+                <h2 className="uppercase lg:text-[1.125em] md:text-[1em] text-[.8em] mt-3" style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.55', letterSpacing: '3px'}}>
                   AeonTV le ofrece todo nuestro contenido con un PAGO ÚNICO
                 </h2>
                 <div className="my-6 flex md:flex-row flex-col gap-3">
@@ -41,16 +41,16 @@ export const InicioPage = () => {
                   </a>
                 </div>
               </div>
-              <div className="order-1 lg:order-2 flex flex-col items-center justify-center">
-                <img src={tv}></img>
+              <div className="order-1 lg:order-2 hidden md:flex flex-col items-center justify-center">
+                <img className="max-w-xs lg:max-w-lg" src={tv}></img>
               </div>
               
             </div>
           </div>
         </div>
         <LatestMovies />
-        <div className="style-441 space-y-4 px-6 sm:px-16 md:px-32 lg:px-48 mt-[-48px]">
-          <div className='py-12'>
+        <div className="style-441 space-y-4 px-6 sm:px-16 md:px-32 lg:px-48 pb-24">
+          <div className='my-12'>
             <div className='mt-16 grid space-y-6 lg:space-x-12 lg:space-y-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 lg:mx-0 text-center'>
               <div>
                 <h4 className='uppercase text-[2em] lg:text-[2.625em]' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
@@ -72,7 +72,7 @@ export const InicioPage = () => {
               </div>
             </div>
           </div>
-          <div className='py-12'>
+          <div className='pt-12'>
             <h4 className='uppercase text-[1em] lg:text-[1.25em] text-center text-[#00b0f4] mb-4' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
               Nuestro servicio
             </h4>
