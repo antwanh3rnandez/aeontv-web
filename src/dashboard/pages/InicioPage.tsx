@@ -13,7 +13,7 @@ export const InicioPage = () => {
 
   return (
     <div className="flex-col md:flex">
-      <div className="relative w-full bg-black h-[90vh]">
+      <div className="relative w-full bg-black h-auto">
         <img className="w-full h-full object-cover" src={hero} alt="Hero" />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <div
