@@ -42,7 +42,7 @@ export const InfraestructuraPage = () => {
                 </h1>
             </div>
             <div className="flex flex-col items-center lg:flex-row">
-                <div className="flex flex-col items-center lg:mr-4 mb-4 lg:w-1/3 w-full h-[450px] lg:border-8 border-blueprimary">
+                <div className="flex flex-col items-center lg:mr-4 mb-4 lg:w-1/3 w-full h-[450px] lg:border-8 border-greenprimary">
                     <img
                             src={infraestructura}
                             alt="Infraestructura"
@@ -52,22 +52,22 @@ export const InfraestructuraPage = () => {
                 <div className="lg:w-2/3">
                     <div className="grid lg:grid-cols-2 lg:justify-center">
                         <FeatureItem
-                            icon={<IconServer2 size={64} className="text-blueprimary"/>}
+                            icon={<IconServer2 size={64} className="text-greenprimary"/>}
                             title="Servidor Dedicado"
                             description="Donde se almacenan las películas y series, importante que cuente con buen almacenamiento y RAM."
                         />
                         <FeatureItem
-                            icon={<IconCode size={64} className="text-blueprimary"/>}
+                            icon={<IconCode size={64} className="text-greenprimary"/>}
                             title="Software o Panel"
                             description="Encargado de administrar TODO, desde usuarios con su expiración automática hasta el contenido."
                         />
                         <FeatureItem
-                            icon={<IconDeviceTv size={64} className="text-blueprimary"/>}
+                            icon={<IconDeviceTv size={64} className="text-greenprimary"/>}
                             title="Canales"
                             description="También llamados canales de restream, se instalan en su Software o Panel para poder ofrecerlos hacia sus clientes."
                         />
                         <FeatureItem
-                            icon={<IconBrandAndroid size={64} className="text-blueprimary"/>}
+                            icon={<IconBrandAndroid size={64} className="text-greenprimary"/>}
                             title="Aplicación Android"
                             description="Será la imagen principal de su servicio con sus propios logos, la cual se le brindará al cliente, ejemplo: usted desde su panel creará usuario y contraseña que automáticamente esos accesos funcionarán con la aplicación."
                         />
@@ -86,8 +86,8 @@ export const InfraestructuraPage = () => {
                 <Card className="shadow-xl p-8" style={{fontFamily: "Poppins"}}>
                     <div className="grid lg:grid-cols-3 items-start justify-center">
                         <div className="flex flex-col items-center justify-center">
-                            <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
-                                <IconNumber1 size={48} className="text-blueprimary"/>
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconNumber1 size={48} className="text-greenprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 1</h4>
@@ -95,8 +95,8 @@ export const InfraestructuraPage = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center">
-                            <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
-                                <IconNumber2 size={48} className="text-blueprimary"/>
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconNumber2 size={48} className="text-greenprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 2</h4>
@@ -104,8 +104,8 @@ export const InfraestructuraPage = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center">
-                            <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
-                                <IconNumber3 size={48} className="text-blueprimary"/>
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconNumber3 size={48} className="text-greenprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 3</h4>
@@ -115,8 +115,8 @@ export const InfraestructuraPage = () => {
                     </div>
                     <div className="grid lg:grid-cols-2 items-start justify-center">
                         <div className="flex flex-col items-center justify-center">
-                            <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
-                                <IconNumber4 size={48} className="text-blueprimary"/>
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconNumber4 size={48} className="text-greenprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 4</h4>
@@ -124,8 +124,8 @@ export const InfraestructuraPage = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center">
-                            <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
-                                <IconNumber5 size={48} className="text-blueprimary"/>
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconNumber5 size={48} className="text-greenprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 5</h4>
@@ -151,23 +151,23 @@ export const InfraestructuraPage = () => {
                                     <h3 className="text-xl font-semibold mb-4">BÁSICO</h3> 
                                     <ul>
                                         <li className="flex flex-row items-start justify-start space-x-2">
-                                            <IconCheck className="text-blueprimary"/>
+                                            <IconCheck className="text-greenprimary"/>
                                             <div className="text-lg font-extralight mb-4">Servidor 8TB – 16 GB RAM – 3.4Ghz</div>
                                         </li>
                                         <li className="flex flex-row items-start justify-start space-x-2">
-                                            <IconCheck className="text-blueprimary"/>
+                                            <IconCheck className="text-greenprimary"/>
                                             <div className="text-lg font-extralight mb-4">Panel IPTV</div>
                                         </li>
                                         <li className="flex flex-row items-start justify-start space-x-2">
-                                            <IconCheck className="text-blueprimary"/>
+                                            <IconCheck className="text-greenprimary"/>
                                             <div className="text-lg font-extralight mb-4">50 Canales a Elegir</div>
                                         </li>
                                         <li className="flex flex-row items-start justify-start space-x-2">
-                                            <IconCheck className="text-blueprimary"/>
+                                            <IconCheck className="text-greenprimary"/>
                                             <div className="text-lg font-extralight mb-4">App Android con sus propios logos</div>
                                         </li>
                                         <li className="flex flex-row items-start justify-start space-x-2">
-                                            <IconCheck className="text-blueprimary"/>
+                                            <IconCheck className="text-greenprimary"/>
                                             <div className="text-lg font-extralight mb-4">Soporte 24/7</div>
                                         </li>
                                     </ul>
@@ -182,7 +182,7 @@ export const InfraestructuraPage = () => {
                                 </div>
                                 <a
                                     href="#"
-                                    className="h-20 flex flex-col justify-center items-center w-full py-2 px-4 bg-blueprimary text-white rounded-lg text-center font-semibold hover:bg-blue-600 transition duration-300 rounded-t-none"
+                                    className="h-20 flex flex-col justify-center items-center w-full py-2 px-4 bg-greenprimary text-white rounded-lg text-center font-semibold hover:bg-blue-600 transition duration-300 rounded-t-none"
                                 >
                                     Comprar
                                 </a>
@@ -194,27 +194,27 @@ export const InfraestructuraPage = () => {
                                 <h3 className="text-xl font-semibold mb-4">PREMIUM</h3> 
                                 <ul>
                                     <li className="flex flex-row items-start justify-start space-x-2">
-                                        <IconCheck className="text-blueprimary"/>
+                                        <IconCheck className="text-greenprimary"/>
                                         <div className="text-lg font-extralight mb-4">Servidor 24TB – 16GB RAM – 2.4 Ghz</div>
                                     </li>
                                     <li className="flex flex-row items-start justify-start space-x-2">
-                                        <IconCheck className="text-blueprimary"/>
+                                        <IconCheck className="text-greenprimary"/>
                                         <div className="text-lg font-extralight mb-4">Panel IPTV</div>
                                     </li>
                                     <li className="flex flex-row items-start justify-start space-x-2">
-                                        <IconCheck className="text-blueprimary"/>
+                                        <IconCheck className="text-greenprimary"/>
                                         <div className="text-lg font-extralight mb-4">80 Canales a Elegir</div>
                                     </li>
                                     <li className="flex flex-row items-start justify-start space-x-2">
-                                        <IconCheck className="text-blueprimary"/>
+                                        <IconCheck className="text-greenprimary"/>
                                         <div className="text-lg font-extralight mb-4">App Android con sus propios logos</div>
                                     </li>
                                     <li className="flex flex-row items-start justify-start space-x-2">
-                                        <IconCheck className="text-blueprimary"/>
+                                        <IconCheck className="text-greenprimary"/>
                                         <div className="text-lg font-extralight mb-4">Soporte 24/7</div>
                                     </li>
                                     <li className="flex flex-row items-start justify-start space-x-2">
-                                        <IconCheck className="text-blueprimary"/>
+                                        <IconCheck className="text-greenprimary"/>
                                         <div className="text-lg font-extralight mb-4"><b>500 Películas de regalo al contratar</b></div>
                                     </li>
                                 </ul>
@@ -229,7 +229,7 @@ export const InfraestructuraPage = () => {
                             </div>
                             <a
                                 href="#"
-                                className="h-20 flex flex-col justify-center items-center w-full py-2 px-4 bg-blueprimary text-white rounded-lg text-center font-semibold hover:bg-blue-600 transition duration-300 rounded-t-none"
+                                className="h-20 flex flex-col justify-center items-center w-full py-2 px-4 bg-greenprimary text-white rounded-lg text-center font-semibold hover:bg-blue-600 transition duration-300 rounded-t-none"
                             >
                                 Comprar
                             </a>
@@ -245,7 +245,7 @@ export const InfraestructuraPage = () => {
                     <div className="flex flex-col lg:flex-row items-center lg:items-center justify-center">
                         <div className="flex flex-col w-[90%]">
                             <div className="mb-3 flex flex-row items-center justify-center lg:items-start lg:justify-start">
-                                <IconQuote size={40} className="text-blueprimary"/>
+                                <IconQuote size={40} className="text-greenprimary"/>
                             </div>
                             <div className="mb-3 text-center lg:text-start">
                                 <em className="text-center lg:text-start">Es un negocio muy rentable, genera ganancias muy rápido a medida que usted le vaya dando publicidad y en la mayoría de los casos la gente llega por recomendación, el servidor que se le da esta planeado para futuro ya que tiene 24TB de almacenamiento (dependiendo del paquete que escoja), para que tenga muchísimo espacio donde subir las películas y series. Usted vende el mes al costo que usted desee, el software se encarga de vencer a los usuarios de forma automática, se le entrega todo lo necesario para subir, bajar películas y series, así mismo como capacitación para el uso del software. Entre más clientes más ganancias, este negocio no requiere de gran publicidad, mediante los grupos de facebook atrae a demasiados clientes.</em>
@@ -274,7 +274,7 @@ export const InfraestructuraPage = () => {
                 </Card>
             </div>
             <div className="py-12 2xl:px-32">
-                <div className="flex flex-col lg:flex-row items-center lg:justify-center border-2 border-blueprimary px-2 pb-4">
+                <div className="flex flex-col lg:flex-row items-center lg:justify-center border-2 border-greenprimary px-2 pb-4">
                     <div className="relative lg:ml-[-50px] mt-[-15px] lg:mt-[15px] flex flex-col justify-center w-fit">
                         <img src={screen} className="w-full"/>
                     </div>
@@ -287,7 +287,7 @@ export const InfraestructuraPage = () => {
                         </h1>
                         <div className="flex flex-row justify-center lg:justify-start">
                             <a href="/canales-restream">
-                                <Button className="rounded-none bg-blueprimary">
+                                <Button className="rounded-none bg-greenprimary">
                                     CANALES RE-STREAM O APP ANDROID
                                 </Button>
                             </a>
