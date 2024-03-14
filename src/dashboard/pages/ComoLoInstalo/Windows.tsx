@@ -1,72 +1,76 @@
+import { Card } from "../../../components/ui/card"
 import { Footer } from "../../../components/pages/Footer";
 import { HeroPages } from "../../../components/pages/HeroPages";
-import { Button } from "../../../components/ui/button";
+import { IconDownload, IconLockOpen, IconRefresh } from "@tabler/icons-react";
 
-import screen1 from "../../../assets/screenshot1-v3.webp";
-import screen2 from "../../../assets/screenshot2-v3.webp";
-import screen3 from "../../../assets/screenshot3-v3.webp";
-
-import video from "../../../assets/windows.mp4"
+import smarters from "../../../assets/smarters.webp";
 
 export const WindowsPage = () => {
-
-  //const videoSource = 'https://www.spacetv.com.mx/wp-content/uploads/2021/08/windows.mkv';
 
   return (
     <div className="flex-col md:flex">
       <div className="relative w-full bg-black h-[220px]">
-        <HeroPages title="Instalar SpaceTV+ (Windows)"/>
+        <HeroPages title="Instalar AeonTV (Windows)"/>
         <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-24 lg:px-32 mt-12">
           <div className='my-12'>
             <div className="my-24 2xl:px-32">
-                <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
-                    <em>SpaceTV+ | Windows</em>
+                <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
+                    <em>AeonTV | Windows</em>
                 </h1>
                 <h1 className='mb-12 text-xl text-center'>
                     <em className='font-extralight'>Esta aplicación le permitirá acceder al contenido de Películas, Canales y Series</em>
                 </h1>
-                <div className="grid lg:grid-cols-2" style={{fontFamily: 'Poppins'}}>
-                    <div className="p-3 lg:w-[110%] z-10">
-                        <video width="100%" controls>
-                            <source src={video} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div className="bg-blueprimary lg:p-24 p-12 lg:text-start text-center z-0 w-full">
-                        <p className="text-xl mb-4">Tutorial</p>
-                        <p className="text-md font-bold mb-4">Este proceso es demasiado sencillo lo que vamos a necesitar es:</p>
-                        <p className="text-md font-light mb-4">* Descargar la app de SpaceTV+ para Windows desde el botón naranja de aquí abajo.</p>
-                        <p className="text-md font-light mb-6">Una vez tenemos el archivo descargado simplemente seguimos los pasos del video.</p>
-                        <div className="flex flex-row items-center justify-center">
-                            <a href="http://158.69.225.52/apps/SpaceTV+(1.2.1).exe" target="_blank"><Button className='bg-orange-500 hover:bg-orange-800 text-white rounded-full px-8 py-6'>DESCARGAR SPACETV+</Button></a>
+                <Card className="shadow-xl p-8" style={{fontFamily: "Poppins"}}>
+                    <div className="grid lg:grid-cols-3 items-start justify-center">
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconDownload size={48} className="text-greenprimary"/>
+                            </div>
+                            <div className="py-4 lg:mt-0 text-center lg:text-center">
+                                <h4 className="font-semibold">PASO 1</h4>
+                                <p className="font-light p-4">Primero deberá descargar esta aplicación en su dispositivo:</p>
+                                <p className="font-light p-4"><a href="https://www.iptvsmarters.com/IPTVSmartersPro-Setup-1.1.1.exe" target="_blank" className="text-greenprimary">https://www.iptvsmarters.com/IPTVSmartersPro-Setup-1.1.1.exe</a></p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconRefresh size={48} className="text-greenprimary"/>
+                            </div>
+                            <div className="py-4 lg:mt-0 text-center lg:text-center">
+                                <h4 className="font-semibold">PASO 2</h4>
+                                <p className="font-light p-4">Una vez descargada solamente llenamos los campos que serían:</p>
+                                <p className="font-light p-2">&bull; AnyName: <b>AeonTV</b></p>
+                                <p className="font-light p-2">&bull; Username: <b>Su usuario</b></p>
+                                <p className="font-light p-2">&bull; Password: <b>Su contraseña</b></p>
+                                <p className="font-light p-2">&bull; http://url_here.com:port (Último campo): <b>http://158.69.225.52:25461</b></p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconLockOpen size={48} className="text-greenprimary"/>
+                            </div>
+                            <div className="py-4 lg:mt-0 text-center lg:text-center">
+                                <h4 className="font-semibold">PASO 3</h4>
+                                <p className="font-light p-4">Marcamos la casilla de «<b>Remember Me</b>» para que no le vuelva a pedir los datos cada vez que ingrese y le damos en «<b>Login</b>» o «<b>Next</b>». </p>
+                                <p className="font-light p-4 italic">¡Listo! Ahora puede acceder al contenido.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="mt-6 2xl:px-32">
-                    <h1 className='mb-4 lg:text-xl text-center italic'>
-                        <p className='font-light'>Ya tendrá SpaceTV+ instalado, solamente ingresa con su usuario y contraseña proporcionada cuando adquirió el servicio.</p>
-                    </h1>
-                </div>
-            </div>
-            <div className="my-12 lg:px-48">
-                <h2 className="text-4xl text-center font-light" style={{fontFamily: "Poppins"}}>Capturas de la&nbsp;
-                <em style={{color: 'rgb(3, 169, 244)', fontFamily: 'Playfair Display'}}>interfaz</em> de&nbsp;
-                <em style={{color: 'rgb(3, 169, 244)', fontFamily: 'Playfair Display'}}>SpaceTV+</em>&nbsp;en Windows</h2>
-            </div>
-            <div className="mt-18 mb-24">
-                <div className="w-[100%] flex items-end">
-                    <div className="relative w-[30%] z-0 shadow-xl">
-                        <img className="w-full" src={screen1} alt="Seccion TV"/>
+                    <div className="flex flex-col items-center justify-center">
+                        <div className="py-4 lg:mt-0 text-center lg:text-center">
+                            <h4 className="font-semibold tracking-widest mb-4">CAPTURA</h4>
+                            <div className="w-full flex items-center justify-center">
+                                <img className="w-4/6" src={smarters}></img>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div className="relative w-[40%] z-10 shadow-xl">
-                        <img className="w-full" src={screen2} alt="Seccion Principal"/>
+                    <div className="mt-6 2xl:px-32">
+                        <h1 className='mb-4 lg:text-xl text-center italic'>
+                            <p className='font-light'>IMPORTANTE: En caso de escribir mal ya sea usuario o contraseña el canal le marcará error, en caso de que su cuenta expire será el mismo caso.</p>
+                            <p className='font-light'>Tiene que respetar mayúsculas y minúsculas tanto en usuario como en contraseña.</p>
+                        </h1>
                     </div>
-                    
-                    <div className="relative w-[30%] z-0 shadow-xl">
-                        <img className="w-full" src={screen3} alt="Seccion Peliculas"/>
-                    </div>
-                </div>
+                </Card>
             </div>
           </div>  
         </div>

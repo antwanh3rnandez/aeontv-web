@@ -34,7 +34,7 @@ export const InfraestructuraPage = () => {
         <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-24 lg:px-32 mt-12">
           <div className='py-12'>
             <div className="2xl:px-32">
-                <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
+                <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                     <em>Una infraestructura IPTV requiere de 4 elementos esenciales para funcionar.</em>
                 </h1>
                 <h1 className='mb-12 text-xl text-center'>
@@ -80,7 +80,7 @@ export const InfraestructuraPage = () => {
                 </h1>
             </div>
             <div className="mt-24 2xl:px-32">
-                <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
+                <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                     <em>Proceso de funcionamiento de Infraestructura IPTV</em>
                 </h1>
                 <Card className="shadow-xl p-8" style={{fontFamily: "Poppins"}}>
@@ -136,7 +136,7 @@ export const InfraestructuraPage = () => {
                 </Card>
             </div>
             <div className="py-20 2xl:px-32">
-                <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
+                <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                     <em>Paquetes</em>
                 </h1>
                 <h1 className='mb-12 text-xl text-center'>
@@ -262,7 +262,7 @@ export const InfraestructuraPage = () => {
                             </div>
                             <div className="mb-2 text-center lg:text-start">
                                 <p className="text-center font-bold text-lg lg:text-start">
-                                SpaceTV+
+                                AeonTV
                                 </p>
                             </div>
                         </div>

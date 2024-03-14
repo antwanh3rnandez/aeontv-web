@@ -11,7 +11,7 @@ export const CanalesRestreamPage = () => {
         <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-24 lg:px-32 mt-12">
           <div className='py-12'>
             <div className="2xl:px-32">
-                <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
+                <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                     <em>¿Ya tiene su propio servicio IPTV activo y solo requiere canales o APP Android?</em>
                 </h1>
                 <h1 className='mb-8 text-xl text-center'>
@@ -19,7 +19,7 @@ export const CanalesRestreamPage = () => {
                 </h1>
             </div>
             <div className="py-12">
-                <h1 className='mb-8 text-3xl xl:text-5xl text-center font-extralight'>
+                <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                     Paquetes de Canales
                 </h1>
                 <div className="p-8 rounded-none space-y-6">
@@ -153,7 +153,7 @@ export const CanalesRestreamPage = () => {
                 </div>
             </div>
             <div className="py-12">
-                <h1 className='mb-8 text-3xl xl:text-5xl text-center font-extralight'>
+                <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                     Paquetes de App Android
                 </h1>
                 <div className="p-8 rounded-none space-y-6">

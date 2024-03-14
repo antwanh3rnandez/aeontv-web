@@ -2,6 +2,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Skeleton } from "../../../components/ui/skeleton"
 
 interface CustomSplideProps {
     id: string;
@@ -66,7 +67,7 @@ interface CustomSplideProps {
           {isLoading ? (
             <div className="flex flex-row md:grid md:grid-cols-8 w-full lg:h-[35vh] h-[15vh] gap-[2px] shadow-xl">
               {[...Array(8)].map((_, index) => (
-                <div key={index} className="skeleton-item"></div>
+                <Skeleton key={index} className="w-[100%] h-[100%] min-h-[100px] min-w-[100px] mb-4 bg-[#f0f0f0]" />
               ))}
             </div>
           ) : (

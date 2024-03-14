@@ -1,4 +1,4 @@
-import { IconBrandMessenger, IconBrandPaypal, IconBuildingStore } from "@tabler/icons-react";
+import { IconBrandMessenger, IconBrandPaypal, IconBuildingStore, IconInfoCircle } from "@tabler/icons-react";
 import CountdownTimer from "./CountdownTimer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
@@ -9,6 +9,7 @@ import { SeparatorWithIcon } from "./SeparationItems";
 
 
 export function PricingPayment () {
+
     return (
         <>
             <div className='py-12 px-6 lg:px-0' id='paquetes'>
@@ -238,7 +239,51 @@ export function PricingPayment () {
                     </CardContent>
                     </Card>
                 </div>
-            </div>   
+            </div>  
+            <div className='mb-12 px-2'>
+                <h2 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-6' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
+                    Puntos a considerar
+                </h2>
+                <ul className='flex flex-col items-start justify-center space-y-4 px-4 md:px-16 lg:px-48'>
+                    <li className='flex items-center justify-center space-x-4'>
+                        <IconInfoCircle size={16} className='text-greenprimary min-w-[16px]' />
+                        <h1 className='text-sm lg:text-lg'>
+                            El costo de nuestro pago único es por dispositivo.
+                        </h1>
+                    </li>
+                    <li className='flex items-center justify-center space-x-4'>
+                        <IconInfoCircle size={16} className='text-greenprimary min-w-[16px]' />
+                        <h1 className='text-sm lg:text-lg'>
+                            Si desea tener otro dispositivo para reproducir contenido simultáneamente deberá pagar la cuota de “pago único” por el dispositivo extra.
+                        </h1>
+                    </li>
+                    <li className='flex items-center justify-center space-x-4'>
+                        <IconInfoCircle size={16} className='text-greenprimary min-w-[16px]' />
+                        <h1 className='text-sm lg:text-lg'>
+                            El costo le incluye todo el contenido antes mencionado.
+                        </h1>
+                    </li>
+                    <li className='flex items-center justify-center space-x-4'>
+                        <IconInfoCircle size={16} className='text-greenprimary min-w-[16px]' />
+                        <h1 className='text-sm lg:text-lg'>
+                        Una vez que realice el pago deberá notificarnos mediante nuestro facebook o bien mediante telegram, para generarle de manera inmediata su cuenta y así pueda hacer uso del servicio Premium.
+                        </h1>
+                    </li>
+                    <li className='flex items-center justify-center space-x-4'>
+                        <IconInfoCircle size={16} className='text-greenprimary min-w-[16px]' />
+                        <h1 className='text-sm lg:text-lg'>
+                            Le recomendamos seguirnos en facebook y unirse a nuestro grupo de telegram en donde mostramos avisos y todas nuestras actualizaciones del contenido que se suben.
+                        </h1>
+                    </li>
+                </ul>
+                <div className="my-6 flex md:flex-row flex-col gap-3 items-center justify-center">
+                  <a href='https://www.facebook.com/aeontv' target='_blank' >
+                    <Button className='dark:bg-transparent bg-black text-white border border-white hover:bg-blueprimary hover:scale-105 transition px-8 py-6 uppercase'>Facebook</Button>
+                  </a>
+                  <Button className='bg-greenprimary text-white hover:scale-105 hover:bg-[#357c00] transition px-8 py-6 uppercase pointer-events-none'>Telegram</Button>
+                  
+                </div>
+            </div> 
         </>
     );
 }  

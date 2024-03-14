@@ -4,7 +4,7 @@ import { ModeToggle } from "../components/ToggleDarkMode";
 import logo from "../assets/logo2.png";
 import { IconChevronDown, IconChevronRight, IconMenu2 } from "@tabler/icons-react";
 import { Card } from "../components/ui/card";
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
+// import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
 
 export const menuOptions = [
@@ -19,26 +19,23 @@ export const menuOptions = [
     icon: <IconChevronDown/>,
     dropdown: true,
     children: [
-      { path: "/instalar-roku", 
-        name: "Instalar SpaceTV+ (Roku)",
-      },
       { path: "/instalar-android", 
-        name: "Instalar SpaceTV+ (FireTV o AndroidTV)",
+        name: "Instalar AeonTV (FireTV o AndroidTV)",
       },
       { path: "/instalar-windows", 
-        name: "Instalar SpaceTV+ (Windows)",
+        name: "Instalar AeonTV (Windows)",
       },
       { path: "/instalar-mac", 
-        name: "Instalar SpaceTV+ (Mac)",
+        name: "Instalar AeonTV (Mac)",
       },
       { path: "/instalar-ios", 
-        name: "Instalar SpaceTV+ (iOS/iPhone/iPad)",
+        name: "Instalar AeonTV (iOS/iPhone/iPad)",
       },
       { path: "/instalar-smarttv-ssiptv", 
-        name: "Instalar SpaceTV+ (SmartTV con SSIPTV)",
+        name: "Instalar AeonTV (SmartTV con SSIPTV)",
       },
       { path: "/instalar-smarttv-smartiptv", 
-        name: "Instalar SpaceTV+ (SmartTV con SmartIPTV)",
+        name: "Instalar AeonTV (SmartTV con SmartIPTV)",
       },
     ],
   },
@@ -231,15 +228,15 @@ export const DashboardLayout = ({
       </div>
       <main className="" onClick={closeMobileMenu}>
         {children}
-        <FloatingWhatsApp
+        {/* <FloatingWhatsApp
             phoneNumber='+5218125949904'
-            accountName='SpaceTV+'
+            accountName='AeonTV'
             statusMessage='Normalmente responde en algunos segundos'
             chatMessage="Hola, Tenemos promociones para ti, pregunta aquí 👇🏻"
             placeholder='Escribe un mensaje...'
             chatboxStyle={{color: 'black'}}
             avatar={logo}
-          />
+          /> */}
         <ScrollToTopButton />
       </main>
     </>

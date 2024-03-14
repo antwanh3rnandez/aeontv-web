@@ -7,7 +7,6 @@ import { SeriesPage } from "../pages/SeriesPage";
 import { InfraestructuraPage } from "../pages/InfraestructuraPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { CanalesRestreamPage } from "../pages/CanalesRestreamPage";
-import { RokuPage } from "../pages/ComoLoInstalo/Roku";
 import { AndroidPage } from "../pages/ComoLoInstalo/Android";
 import { WindowsPage } from "../pages/ComoLoInstalo/Windows";
 import { MacPage } from "../pages/ComoLoInstalo/Mac";
@@ -25,7 +24,6 @@ export const DashboardRoutes = () => {
         <Route path="/series" element={<SeriesPage/>} />
         <Route path="/infraestructura" element={<InfraestructuraPage/>} />
         <Route path="/canales-restream" element={<CanalesRestreamPage/>} />
-        <Route path="/instalar-roku" element={<RokuPage/>} />
         <Route path="/instalar-android" element={<AndroidPage/>} />
         <Route path="/instalar-windows" element={<WindowsPage/>} />
         <Route path="/instalar-mac" element={<MacPage/>} />

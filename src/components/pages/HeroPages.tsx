@@ -11,7 +11,7 @@ export const HeroPages = ({ title }: { title: string }) => {
           >
             <div className="w-full h-full flex flex-col items-center justify-center">
               <div className="mt-[-12px]">
-                <h2 className="hero-text lg:text-[3.5em] text-[2.5em]">
+                <h2 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                   {title}
                 </h2>
               </div>

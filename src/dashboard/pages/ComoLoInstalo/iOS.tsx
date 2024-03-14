@@ -10,12 +10,12 @@ export const IPhonePage = () => {
   return (
     <div className="flex-col md:flex">
       <div className="relative w-full bg-black h-[220px]">
-        <HeroPages title="Instalar SpaceTV+ (iOS/iPhone/iPad)"/>
+        <HeroPages title="Instalar AeonTV (iOS/iPhone/iPad)"/>
         <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-24 lg:px-32 mt-12">
           <div className='my-12'>
             <div className="my-24 2xl:px-32">
-                <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
-                    <em>SpaceTV+ | iOS/iPhone/iPad</em>
+                <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
+                    <em>AeonTV | iOS/iPhone/iPad</em>
                 </h1>
                 <h1 className='mb-12 text-xl text-center'>
                     <em className='font-extralight'>Esta aplicación le permitirá acceder al contenido de Películas, Canales y Series</em>
@@ -23,31 +23,31 @@ export const IPhonePage = () => {
                 <Card className="shadow-xl p-8" style={{fontFamily: "Poppins"}}>
                     <div className="grid lg:grid-cols-3 items-start justify-center">
                         <div className="flex flex-col items-center justify-center">
-                            <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
-                                <IconDownload size={48} className="text-blueprimary"/>
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconDownload size={48} className="text-greenprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 1</h4>
                                 <p className="font-light p-4">Primero deberá descargar esta aplicación en su dispositivo:</p>
-                                <p className="font-light p-4"><a href="https://apps.apple.com/mx/app/iptv-smarter-player/id6450916775" target="_blank" className="text-blueprimary">https://apps.apple.com/mx/app/iptv-smarter-player/id6450916775</a></p>
+                                <p className="font-light p-4"><a href="https://apps.apple.com/mx/app/iptv-smarter-player/id6450916775" target="_blank" className="text-greenprimary">https://apps.apple.com/mx/app/iptv-smarter-player/id6450916775</a></p>
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center">
-                            <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
-                                <IconRefresh size={48} className="text-blueprimary"/>
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconRefresh size={48} className="text-greenprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 2</h4>
                                 <p className="font-light p-4">Una vez descargada solamente llenamos los campos que serían:</p>
-                                <p className="font-light p-2">&bull; AnyName: <b>SpaceTV</b></p>
+                                <p className="font-light p-2">&bull; AnyName: <b>AeonTV</b></p>
                                 <p className="font-light p-2">&bull; Username: <b>Su usuario</b></p>
                                 <p className="font-light p-2">&bull; Password: <b>Su contraseña</b></p>
                                 <p className="font-light p-2">&bull; http://url_here.com:port (Último campo): <b>http://158.69.225.52:25461</b></p>
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center">
-                            <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
-                                <IconLockOpen size={48} className="text-blueprimary"/>
+                            <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                                <IconLockOpen size={48} className="text-greenprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 3</h4>

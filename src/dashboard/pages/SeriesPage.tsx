@@ -44,7 +44,7 @@ export const SeriesPage = () => {
         <HeroPages title="Series"/>
         <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-24 lg:px-32 mt-12">
           <div className='py-12'>
-            <h1 className='mb-6 text-5xl text-center font-extralight'>
+            <h1 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
               <em>¡Contamos con <b>{count}</b> capítulos y contando!</em>
             </h1>
             <h1 className='mb-6 text-3xl text-center font-extralight'>

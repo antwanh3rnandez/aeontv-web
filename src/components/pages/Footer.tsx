@@ -1,6 +1,6 @@
 import { Button } from "../ui/button"
 import { 
-  IconBrandFacebook, 
+  IconBrandFacebook,
 } from '@tabler/icons-react/';
 import footer from "../../assets/bg.webp"
 
@@ -16,12 +16,11 @@ export const Footer = () => {
             >
               <div className="w-full h-full flex flex-col gap-6 lg:flex-row items-center justify-center">
                 <h2 className="text-3xl xl:text-5xl text-center font-extralight">
-                  <em className='font-semibold'>Únete a la familia! </em>
-                  <em>Adquiere nuestro servicio.</em>
+                  <em>¡Liberate ahora de las mensualidades!</em>
                 </h2>
                 <div className="">
                   <a href='/#paquetes'>
-                    <Button className='bg-greenprimary text-white rounded-md px-8 py-6'>COMPRAR AHORA</Button>
+                    <Button className='bg-greenprimary text-white rounded-md px-8 py-6'>COMPRAR</Button>
                   </a>
                 </div>
               </div>
@@ -31,7 +30,8 @@ export const Footer = () => {
         <div className='flex flex-row h-36 shadow-2xl'>
           <div className='w-[100%] bg-greenprimary flex flex-row items-center justify-center'>
             <a href="https://www.facebook.com/aeontv/" target="_blank" className="flex flex-row items-center justify-center space-x-4 p-8">
-              <p className='md:text-xl xl:text-4xl font-normal text-white text-center'>PÁGINA DE FACEBOOK</p>
+              <p className='uppercase text-[1.6em] lg:text-[2.625em] text-center text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
+                PÁGINA DE FACEBOOK</p>
               <IconBrandFacebook size={64} className='text-white'/>
             </a>
           </div>
