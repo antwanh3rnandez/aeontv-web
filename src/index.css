@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-text {
+  font-family: Protest Riot;
+  font-weight: 400;
+  /* font-size: 3.5em; */
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.style-441 {
+  height: auto;
+  min-height: unset;
+  background-position: center center;
+  background-size: cover;
+  /* background-image: url(https://user-64918366-work.colibriwp.com/aeontv/wp-content/uploads/2019/03/bg-abs-8.jpg); */
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 130px;
+}
+
+.bg-numeros {
+  height: auto;
+  min-height: unset;
+  background-color: #5ad100;
+  background-position: 100% 52.658884565499%;
+  background-size: cover;
+  background-image: url(https://user-64918366-work.colibriwp.com/aeontv/wp-content/uploads/2019/03/bg-abs-4.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.skeleton-item {
+  width: 100%;
+  height: 100%;
+  min-height: 100px; /* Ajusta según sea necesario */
+  min-width: 100px;  /* Ajusta según sea necesario */
+  background-color: #f0f0f0; /* Color del esqueleto */
+  margin-bottom: 16px; /* Espaciado entre elementos, ajusta según sea necesario */
+  animation: loading 1.5s infinite ease-in-out; /* Animación de carga */
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.hero-animated {
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 30px #2d9da9;
+  }
+  to {
+    text-shadow: 0 0 40px #34b3c1, 0 0 20px #4dbbc7;
+  }
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación de ondulación */
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animación de escalado */
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* Animación de cambio de color */
+@keyframes colorChange {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  33% {
+    color: rgb(63, 215, 61);
+  }
+  66% {
+    color: rgb(16, 219, 230);
+  }
+  99% {
+    color: rgb(204, 255, 0);
+  }
+  /* 100% {
+    color: rgb(255, 72, 6);
+  } */
+}
+
+/* Animación de aparecimiento */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Animación de destello */
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+/* Animación de balanceo de lado a lado */
+@keyframes sideToSide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.glow {
+  animation-name: glow;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.wave {
+  animation-name: wave;
+}
+
+.rotate {
+  animation-name: rotate;
+}
+
+.scale {
+  animation-name: scale;
+}
+
+.colorChange {
+  animation-name: colorChange;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+.flash {
+  animation-name: flash;
+}
+
+.sideToSide {
+  animation-name: sideToSide;
+}
+
+.scroll-to-top {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+  left: 2rem; 
+  /* background-color: rgba(0, 123, 255, 0.5);
+  color: #fff; */
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
