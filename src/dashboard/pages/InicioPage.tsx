@@ -20,7 +20,7 @@ export const InicioPage = () => {
             className="w-full h-full bg-black bg-opacity-20 text-white text-center p-4 rounded"
             style={{ backdropFilter: 'blur(0px)' }}
           >
-            <div className="w-full h-full flex lg:flex-row flex-col items-center justify-center my-6">
+            <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 items-center justify-center my-6">
               <div className="md:order-1 flex flex-col items-center justify-center">
                 <h2 className="lg:text-[1.125em] md:text-[1em] text-[.8em]" style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.55', letterSpacing: '3px'}}>
                   EL MEJOR CONTENIDO POR INTERNET PARA TU DISPOSITIVO
