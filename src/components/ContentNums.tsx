@@ -50,8 +50,8 @@ export function ContentNums() {
           <h2 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4 text-white' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
             NUESTRO CONTENIDO EN NÚMEROS
           </h2>
-          <div className='mx-4 lg:mx-64'>
-            <h3 className='text-[.8em] lg:text-[1.25em] text-center font-light text-white px-8 lg:px-64' style={{fontFamily: 'Poppins'}}>
+          <div className='mx-4 xl:mx-64'>
+            <h3 className='text-[.8em] lg:text-[1.25em] text-center font-light text-white px-8 2xl:px-64' style={{fontFamily: 'Poppins'}}>
               Todos los días actualizamos y añadimos nuevo contenido a nuestra plataforma para que usted siempre obtenga los mejores estrenos y los mejores títulos.
             </h3>
           </div>
