@@ -75,13 +75,13 @@ export function TestimonialSection () {
   return (
     <div className="space-y-4 px-6 sm:px-16 md:px-32 xl:px-48 mt-12">
       <div className='py-12'>
-        <h1 className='mb-6 text-5xl text-center font-extralight'>
-          <em>Testimoniales</em>
-        </h1>
-        <h1 className='mb-6 text-2xl text-center font-extralight'>
+        <h2 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
+          Testimoniales
+        </h2>
+        <h3 className='mb-6 text-[1em] lg:text-[1.255em] text-center font-light' style={{fontFamily: 'Poppins'}}>
           Lo que nuestros clientes opinan de nuestro servicio:
-        </h1>
-        <div className='mt-16 2xl:px-24'>
+        </h3>
+        <div className='mt-12 2xl:px-24'>
           <TestimonialCarousel testimonials={testimonials} />
         </div>
       </div>

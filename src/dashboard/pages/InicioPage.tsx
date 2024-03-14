@@ -13,7 +13,7 @@ export const InicioPage = () => {
 
   return (
     <div className="flex-col md:flex">
-      <div className="relative w-full bg-black h-auto">
+      <div className="relative w-full bg-black h-[650px]">
         <img className="w-full h-full object-cover" src={hero} alt="Hero" />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <div
@@ -79,7 +79,7 @@ export const InicioPage = () => {
             <h2 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
               Las cosas claras
             </h2>
-            <h3 className='text-[1em] lg:text-[1.125em] text-center font-light' style={{fontFamily: 'Poppins'}}>
+            <h3 className='text-[1em] lg:text-[1.25em] text-center font-light' style={{fontFamily: 'Poppins'}}>
               Queremos darle siempre lo mejor es por eso que le ofrecemos…
             </h3>
             <div className='mt-16 grid space-y-6 lg:space-x-12 lg:space-y-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-3 lg:mx-0 text-center'>

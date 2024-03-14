@@ -56,12 +56,12 @@ interface CustomSplideProps {
     return (
       
       <div className='py-12'>
-        <h1 className='mb-6 text-5xl text-center font-extralight'>
-          <em>Disfruta de los mejores estrenos</em>
-        </h1>
-        <h1 className='mb-6 text-2xl text-center font-extralight'>
+        <h2 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
+          Disfruta de los mejores estrenos
+        </h2>
+        <h3 className='mb-6 text-[1em] lg:text-[1.255em] text-center font-light' style={{fontFamily: 'Poppins'}}>
           Contamos con los últimos estrenos de cine así como los mejores títulos
-        </h1>
+        </h3>
         <div className='w-full h-auto max-h-[400px]'>
           {isLoading ? (
             <div className="flex flex-row md:grid md:grid-cols-8 w-full lg:h-[35vh] h-[15vh] gap-[2px] shadow-xl">
