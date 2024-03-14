@@ -15,8 +15,8 @@ export function PricingPayment () {
                 <h2 className='uppercase text-[1.6em] lg:text-[2.625em] text-center mb-4' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                     Comprar
                 </h2>
-                <h3 className='text-[.8em] lg:text-[1.25em] text-center font-light px-8 lg:px-64 mb-4' style={{fontFamily: 'Poppins'}}>
-                    Todos los días actualizamos y añadimos nuevo contenido a nuestra plataforma para que usted siempre obtenga los mejores estrenos y los mejores títulos.
+                <h3 className='text-[1em] lg:text-[1.25em] text-center font-light px-8 lg:px-64 mb-4' style={{fontFamily: 'Poppins'}}>
+                    A continuación le mostramos nuestro precio de PAGO ÚNICO.
                 </h3>
                 <h2 className='text-[1.6em] lg:text-[2.625em] text-center mb-4' style={{fontFamily: 'Oswald', fontWeight: 400, lineHeight: '1.143'}}>
                     Métodos de Pago
