@@ -41,10 +41,13 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ testimonials 
         centerMode={true}
         centerSlidePercentage={slidePercentage}
         autoPlay={true}
-        className='w-full h-[100%]'
+        className="w-full h-[100%]"
       >
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="w-[100%] h-[100%] flex items-center justify-center">
+          <div
+            key={index}
+            className="w-[100%] h-[100%] flex items-center justify-center"
+          >
             <Testimonial testimonial={testimonial} />
           </div>
         ))}

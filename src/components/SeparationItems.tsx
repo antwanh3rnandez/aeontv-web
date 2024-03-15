@@ -1,7 +1,4 @@
 
-
-
-
 export function SeparatorWithIcon ({ icon: Icon, iconSize, color }) {
     return (
         <div className='py-6 flex flex-row items-center justify-center'>
