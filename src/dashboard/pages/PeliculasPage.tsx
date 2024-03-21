@@ -24,7 +24,7 @@ export const PeliculasPage = () => {
   const [count, setCount] = useState(4000);
 
   useEffect(() => {
-    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/categorias/movie/`;
+    const apiUrl = import.meta.env.VITE_PAGE_MOVIES_URL;
 
     axios.get(apiUrl)
       .then((response) => {

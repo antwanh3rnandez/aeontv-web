@@ -7,7 +7,7 @@ export const DataTableExample = ({ type, categoria }: { type:string, categoria: 
   const [data, setData] = useState<Item[]>([]);
 
   useEffect(() => {
-    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/${type}/${categoria}/`;
+    const apiUrl = `${import.meta.env.VITE_BASE_API_URL}${type}/${categoria}/`;
 
     axios.get(apiUrl)
       .then((response) => {

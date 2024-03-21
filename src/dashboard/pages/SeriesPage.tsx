@@ -24,7 +24,7 @@ export const SeriesPage = () => {
   const [count, setCount] = useState(1000);
 
   useEffect(() => {
-    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/categorias/series/`;
+    const apiUrl = import.meta.env.VITE_PAGE_SERIES_URL;;
 
     axios.get(apiUrl)
       .then((response) => {

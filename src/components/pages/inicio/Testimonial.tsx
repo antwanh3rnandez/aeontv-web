@@ -13,7 +13,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ testimonial }) => {
       <Card className="w-full h-[100%] bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center">
         <CardHeader className='flex flex-col items-center justify-center'>
             <div className='w-20 h-20 border-2 border-greenprimary rounded-full flex flex-col items-center justify-center'>
-                <img className='w-20 h-20 rounded-full' style={{aspectRatio: '1 / 1'}} src={`https://spacetv-api.axol.dev/cuenta/uploads/${testimonial.foto}`}></img>
+              <img className='w-20 h-20 rounded-full' style={{aspectRatio: '1 / 1'}} src={`${import.meta.env.VITE_TESTIMONIOS_IMAGES+testimonial.foto}`}></img>
             </div>
             <CardTitle className="text-gray-500 mt-4 font-normal">{testimonial.nombre}</CardTitle>
         </CardHeader>

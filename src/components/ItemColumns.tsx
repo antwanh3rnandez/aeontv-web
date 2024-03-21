@@ -40,7 +40,7 @@ export const columnsMovies: ColumnDef<Item>[] = [
         header: "Cover",
         cell: ({ row }) => {
             let coverUrl = row.original.cover;
-            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, 'https://spacetv-api2.axol.dev');
+            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, `${import.meta.env.VITE_MOVIES_IMAGE_BASE_URL}`);
     
             return (
                 <div>
@@ -82,7 +82,7 @@ export const columnsCanales: ColumnDef<Item>[] = [
         cell: ({ row }) => {
             let coverUrl = row.original.cover;
             coverUrl = coverUrl?.replace(/"/g, '')
-            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, 'https://spacetv-api2.axol.dev');
+            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, `${import.meta.env.VITE_MOVIES_IMAGE_BASE_URL}`);
             
             return (
                 <div>
@@ -136,7 +136,7 @@ export const columnsSeries: ColumnDef<Item>[] = [
         header: "Cover",
         cell: ({ row }) => {
             let coverUrl = row.original.cover;
-            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, 'https://spacetv-api2.axol.dev');
+            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, `${import.meta.env.VITE_MOVIES_IMAGE_BASE_URL}`);
 
             return (
                 <div>

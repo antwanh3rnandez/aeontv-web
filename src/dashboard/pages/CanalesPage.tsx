@@ -24,7 +24,7 @@ export const CanalesPage = () => {
   const [count, setCount] = useState(300);
 
   useEffect(() => {
-    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/categorias/live/`;
+    const apiUrl = import.meta.env.VITE_PAGE_CHANNELS_URL;
 
     axios.get(apiUrl)
       .then((response) => {
