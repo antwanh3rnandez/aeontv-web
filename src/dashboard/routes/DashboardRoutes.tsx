@@ -7,12 +7,16 @@ import { SeriesPage } from "../pages/SeriesPage";
 import { InfraestructuraPage } from "../pages/InfraestructuraPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { CanalesRestreamPage } from "../pages/CanalesRestreamPage";
-import { AndroidPage } from "../pages/ComoLoInstalo/Android";
+/* import { AndroidPage } from "../pages/ComoLoInstalo/Android";
 import { WindowsPage } from "../pages/ComoLoInstalo/Windows";
 import { MacPage } from "../pages/ComoLoInstalo/Mac";
 import { IPhonePage } from "../pages/ComoLoInstalo/iOS";
 import { SsiptvPage } from "../pages/ComoLoInstalo/Ssiptv";
-import { SmartIptvPage } from "../pages/ComoLoInstalo/SmartIptv";
+import { SmartIptvPage } from "../pages/ComoLoInstalo/SmartIptv"; */
+import { RokuPage } from "../pages/ComoLoInstalo/Roku";
+import { ActivarPage } from "../pages/ActivarPage";
+import { TerminosPage } from "../pages/TerminosPage";
+//import path from 'path';
 
 export const DashboardRoutes = () => {
   return (
@@ -24,12 +28,15 @@ export const DashboardRoutes = () => {
         <Route path="/series" element={<SeriesPage/>} />
         <Route path="/infraestructura" element={<InfraestructuraPage/>} />
         <Route path="/canales-restream" element={<CanalesRestreamPage/>} />
-        <Route path="/instalar-android" element={<AndroidPage/>} />
+        {/* <Route path="/instalar-android" element={<AndroidPage/>} />
         <Route path="/instalar-windows" element={<WindowsPage/>} />
         <Route path="/instalar-mac" element={<MacPage/>} />
         <Route path="/instalar-ios" element={<IPhonePage/>} />
         <Route path="/instalar-smarttv-ssiptv" element={<SsiptvPage/>} />
-        <Route path="/instalar-smarttv-smartiptv" element={<SmartIptvPage/>} />
+        <Route path="/instalar-smarttv-smartiptv" element={<SmartIptvPage/>} /> */}
+        <Route path="/instalar" element={<RokuPage/>} />
+        <Route path="/activar" element={<ActivarPage/>} />
+        <Route path="/terminos" element={<TerminosPage/>} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </DashboardLayout>

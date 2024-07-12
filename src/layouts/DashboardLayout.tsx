@@ -6,6 +6,7 @@ import { IconChevronDown, IconChevronRight, IconMenu2 } from "@tabler/icons-reac
 import { Card } from "../components/ui/card";
 // import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
+import { Toaster } from "react-hot-toast";
 
 export const menuOptions = [
   {
@@ -14,10 +15,10 @@ export const menuOptions = [
     dropdown: false,
   },
   {
-    path: "",
+    path: "/instalar",
     name: "¿Cómo lo instalo?",
     icon: <IconChevronDown/>,
-    dropdown: true,
+    dropdown: false,
     children: [
       { path: "/instalar-android", 
         name: "Instalar AeonTV (FireTV o AndroidTV)",
@@ -102,7 +103,9 @@ export const DashboardLayout = ({
     <>
       <div className="border-b">
         <div
-          className={`flex flex-row ${isMobileMenuOpen ? "border-b-2" : ""} h-28 items-center justify-center px-4 lg:space-x-6`}
+          className={`flex flex-row ${
+            isMobileMenuOpen ? "border-b-2" : ""
+          } h-28 items-center justify-center px-4 lg:space-x-6`}
         >
           <nav className="flex items-center space-x-4 lg:space-x-6">
             <a href="/">
@@ -111,9 +114,12 @@ export const DashboardLayout = ({
             {/* Menú Normal */}
             <div className="hidden lg:flex lg:space-x-4 md:space-x-3 md:text-sm xl:space-x-6 2xl:space-x-10">
               {menuOptions.map((option, index) => (
-                <div key={index} style={{fontFamily: 'Poppins'}}>
+                <div key={index} style={{ fontFamily: "Poppins" }}>
                   {option.dropdown ? (
-                    <div className="relative group" onMouseEnter={toggleSubMenu}>
+                    <div
+                      className="relative group"
+                      onMouseEnter={toggleSubMenu}
+                    >
                       <div className="flex flex-row text-muted-foreground hover:text-primary">
                         <button
                           onClick={closeMobileMenu}
@@ -133,7 +139,7 @@ export const DashboardLayout = ({
                             to={child.path}
                             className="w-full block px-6 py-2 text-md text-black dark:text-white font-light text-primary capitalize transition-colors hover:text-muted-foreground dark:hover:text-muted-foreground"
                             key={index}
-                            style={{fontFamily: 'Poppins'}}
+                            style={{ fontFamily: "Poppins" }}
                           >
                             {child.name}
                           </NavLink>
@@ -174,59 +180,59 @@ export const DashboardLayout = ({
                 </a>
               </div>
               {menuOptions.map((option, index) => (
-                <div key={index} style={{fontFamily: 'Poppins'}}>
-                {option.dropdown ? (
-                  <div className="relative group" onClick={toggleSubMenuResposive}>
-                    <div className="flex flex-row space-x-2 text-muted-foreground hover:text-primary">
-                      <button
-                        onClick={closeMobileMenu}
-                        className={getNavLinkClass({ isActive: true })}
-                      >
-                        <div className="pl-4">
-                          {option.name}
-                        </div>
-                      </button>
-                      {isHoverResponsive ? option.icon : <IconChevronRight/>}
-                    </div>
+                <div key={index} style={{ fontFamily: "Poppins" }}>
+                  {option.dropdown ? (
                     <div
-                      className={`${
-                        isHoverResponsive ? "block" : "hidden"
-                      } w-full left-0 mt-2 space-y-1 origin-top-right`}
+                      className="relative group"
+                      onClick={toggleSubMenuResposive}
                     >
-                      {option.children?.map((child, index) => (
-                        <NavLink
-                          to={child.path}
-                          className="w-full block pl-8 py-2 text-sm font-light text-primary capitalize transition-colors hover:text-muted-foreground dark:hover:text-muted-foreground"
-                          key={index}
-                          style={{fontFamily: 'Poppins'}}
+                      <div className="flex flex-row space-x-2 text-muted-foreground hover:text-primary">
+                        <button
+                          onClick={closeMobileMenu}
+                          className={getNavLinkClass({ isActive: true })}
                         >
-                          {child.name}
-                        </NavLink>
-                      ))}
+                          <div className="pl-4">{option.name}</div>
+                        </button>
+                        {isHoverResponsive ? option.icon : <IconChevronRight />}
+                      </div>
+                      <div
+                        className={`${
+                          isHoverResponsive ? "block" : "hidden"
+                        } w-full left-0 mt-2 space-y-1 origin-top-right`}
+                      >
+                        {option.children?.map((child, index) => (
+                          <NavLink
+                            to={child.path}
+                            className="w-full block pl-8 py-2 text-sm font-light text-primary capitalize transition-colors hover:text-muted-foreground dark:hover:text-muted-foreground"
+                            key={index}
+                            style={{ fontFamily: "Poppins" }}
+                          >
+                            {child.name}
+                          </NavLink>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ) : (
-                  <NavLink
-                    to={option.path}
-                    className={getNavLinkClass}
-                    key={index}
-                  >
-                    <div className="pl-4">
-                      {option.name}
-                    </div>
-                  </NavLink>
-                )}
-                {/* Divisor entre cada elemento padre del menu */}
-                {index < menuOptions.length - 1 && (
-                  <hr className="border-[.5px] w-[100%] border-primary-foreground my-2"></hr>
-                )}
-              </div>
+                  ) : (
+                    <NavLink
+                      to={option.path}
+                      className={getNavLinkClass}
+                      key={index}
+                    >
+                      <div className="pl-4">{option.name}</div>
+                    </NavLink>
+                  )}
+                  {/* Divisor entre cada elemento padre del menu */}
+                  {index < menuOptions.length - 1 && (
+                    <hr className="border-[.5px] w-[100%] border-primary-foreground my-2"></hr>
+                  )}
+                </div>
               ))}
             </div>
           </div>
         )}
       </div>
       <main className="" onClick={closeMobileMenu}>
+        <Toaster position="top-right" reverseOrder={true} />
         {children}
         {/* <FloatingWhatsApp
             phoneNumber='+5218125949904'

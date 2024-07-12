@@ -266,7 +266,7 @@ export function PricingPayment () {
                     <li className='flex items-center justify-center space-x-4'>
                         <IconInfoCircle size={16} className='text-greenprimary min-w-[16px]' />
                         <h1 className='text-sm lg:text-lg'>
-                        Una vez que realice el pago deberá notificarnos mediante nuestro facebook o bien mediante telegram, para generarle de manera inmediata su cuenta y así pueda hacer uso del servicio Premium.
+                        Una vez que realice el pago deberá enviar todos los datos de su compra desde nuestra web de activación: <a href='/activar' className='text-greenprimary'>www.aeontv.com.mx/activar</a>
                         </h1>
                     </li>
                     <li className='flex items-center justify-center space-x-4'>

@@ -63,10 +63,10 @@
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 30px #2d9da9;
+    text-shadow: 0 0 30px #2da944;
   }
   to {
-    text-shadow: 0 0 40px #34b3c1, 0 0 20px #4dbbc7;
+    text-shadow: 0 0 40px #34c15a, 0 0 20px #4dc76d;
   }
 }
 

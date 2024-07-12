@@ -14,7 +14,7 @@ const CountdownTimer = () => {
   }, []);
 
   function calculateTimeRemaining() {
-    const countDownDate = new Date('Apr 31, 2024 00:00:00').getTime();
+    const countDownDate = new Date('Jul 31, 2024 00:00:00').getTime();
     const now = new Date().getTime();
     const distance = countDownDate - now;
 

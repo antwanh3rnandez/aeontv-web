@@ -28,7 +28,7 @@ export const NotFoundPage = () => {
                   <Card className="px-2 py-3">
                     <NavLink
                       to={child.path}
-                      className="text-blueprimary hover:underline"
+                      className="text-greenprimary hover:underline"
                       key={childIndex}
                     >
                       {child.name}
@@ -39,7 +39,7 @@ export const NotFoundPage = () => {
                 <Card className="px-2 py-3">
                   <NavLink
                     to={option.path}
-                    className="text-blueprimary hover:underline"
+                    className="text-greenprimary hover:underline"
                     key={index}
                   >
                     {option.name}
