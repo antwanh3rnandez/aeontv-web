@@ -14,6 +14,7 @@ export const ActivarPage = () => {
   const [metodoPago, setMetodoPago] = useState("")
   const [idTransaccion, setIdTransaccion] = useState("")
   const [correo, setCorreo] = useState("")
+  const [countryCode, setCountryCode] = useState("");
   const [whatsapp, setWhatsapp] = useState("")
   const [terms, setTerms] = useState(false)
 
@@ -30,7 +31,7 @@ export const ActivarPage = () => {
       metodoPago: metodoPago,
       idTransaccion: idTransaccion,
       email: correo,
-      whatsapp: whatsapp,
+      whatsapp: countryCode+whatsapp,
       terminos: terms,
     };
 
@@ -60,9 +61,14 @@ export const ActivarPage = () => {
     setMetodoPago("");
     setIdTransaccion("");
     setCorreo("");
+    setCountryCode("");
     setWhatsapp("");
     setTerms(false);
   }
+
+  const handleCountryChange = (e) => {
+    setCountryCode(e.target.value);
+  };
 
   const handleChange = (e) => {
     const inputValue = e.target.value
@@ -122,7 +128,7 @@ export const ActivarPage = () => {
                         onChange={(e) => setMetodoPago(e.target.value)}
                         required
                       >
-                        <option value="">Seleccione</option>
+                        <option value="">Seleccione una opción</option>
                         <option value="PayPal">PayPal</option>
                         <option value="MercadoPago">MercadoPago</option>
                         <option value="Transferencia/Deposito">
@@ -154,7 +160,7 @@ export const ActivarPage = () => {
                         required
                       />
 
-                      <label className="mt-2 font-semibold text-end">
+                      {/* <label className="mt-2 font-semibold text-end">
                         Ingrese su Número de WhatsApp:
                       </label>
                       <input
@@ -164,7 +170,61 @@ export const ActivarPage = () => {
                         value={whatsapp}
                         onChange={(e) => setWhatsapp(e.target.value)}
                         required
-                      />
+                      /> */}
+                      <label className="mt-2 font-semibold text-end">
+                        País (WhatsApp):
+                      </label>
+                      <select
+                        className="border-2 border-greenprimary text-black rounded-md p-2 w-full"
+                        id="countrycode"
+                        name="countrycode"
+                        value={countryCode}
+                        onChange={handleCountryChange}
+                        required
+                      >
+                        <option value="">Seleccione una opción</option>
+                        <option value="+52">México (+52)</option>
+                        <option value="+1">Estados Unidos (+1)</option>
+                        <option value="+54">Argentina (+54)</option>
+                        <option value="+61">Australia (+61)</option>
+                        <option value="+32">Belgica (+32)</option>
+                        <option value="+55">Brasil (+55)</option>
+                        <option value="+1">Canadá (+1)</option>
+                        <option value="+56">Chile (+56)</option>
+                        <option value="+86">China (+86)</option>
+                        <option value="+57">Colombia (+57)</option>
+                        <option value="+506">Costa Rica (+506)</option>
+                        <option value="+53">Cuba (+53)</option>
+                        <option value="+45">Dinamarca (+45)</option>
+                        <option value="+33">Francia (+33)</option>
+                        <option value="+49">Alemania (+49)</option>
+                        <option value="+91">India (+91)</option>
+                        <option value="+39">Italia (+39)</option>
+                        <option value="+31">Países Bajos (+31)</option>
+                        <option value="+51">Perú (+51)</option>
+                        <option value="+34">España (+34)</option>
+                        <option value="+41">Suiza (+41)</option>
+                        <option value="+44">Reino Unido (+44)</option>
+                        <option value="+58">Venezuela (+58)</option>
+                      </select>
+                      <label className="mt-2 font-semibold text-end">
+                        Ingrese su Número de WhatsApp:
+                      </label>
+                      <div className="input-group flex text-black rounded-md w-full">
+                        <div className="input-group-prepend flex items-center px-3 border-t-2 border-l-2 border-b-2 border-greenprimary bg-gray-200 text-gray-700 rounded-l-md">
+                          {countryCode ? `${countryCode}` : "+"}
+                        </div>
+                        <input
+                          type="text"
+                          className="border-2 border-greenprimary rounded-r-md p-2 w-full"
+                          id="whatsapp"
+                          name="whatsapp"
+                          value={whatsapp}
+                          onChange={(e) => setWhatsapp(e.target.value)}
+                          maxLength={10}
+                          required
+                        />
+                      </div>
                     </Card>
                     <Card className="flex flex-col items-center justify-start gap-2 p-5 border-1 border-greenprimary w-full h-full">
                       <label className="font-semibold text-end">
