@@ -118,7 +118,7 @@ export const ActivarPage = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="flex flex-col lg:grid lg:grid-cols-2 items-center justify-center gap-2">
                     <Card className="flex flex-col lg:flex-wrap items-center justify-center gap-2 p-5 border-1 border-greenprimary mt-4 lg:mt-0 w-full h-full">
-                      <label className="font-semibold text-end">
+                      <label className="font-semibold text-center">
                         Ingrese su Método de Pago:
                       </label>
                       <select
@@ -136,7 +136,7 @@ export const ActivarPage = () => {
                         </option>
                       </select>
 
-                      <label className="mt-2 font-semibold text-end">
+                      <label className="mt-2 font-semibold text-center">
                         Ingrese el ID de la Transacción:
                       </label>
                       <input
@@ -148,7 +148,7 @@ export const ActivarPage = () => {
                         required
                       />
 
-                      <label className="mt-2 font-semibold text-end">
+                      <label className="mt-2 font-semibold text-center">
                         Ingrese su Correo Electrónico:
                       </label>
                       <input
@@ -159,19 +159,7 @@ export const ActivarPage = () => {
                         onChange={(e) => setCorreo(e.target.value)}
                         required
                       />
-
-                      {/* <label className="mt-2 font-semibold text-end">
-                        Ingrese su Número de WhatsApp:
-                      </label>
-                      <input
-                        type="text"
-                        name="whatsapp"
-                        className="border-2 border-greenprimary text-black rounded-md p-2 w-full"
-                        value={whatsapp}
-                        onChange={(e) => setWhatsapp(e.target.value)}
-                        required
-                      /> */}
-                      <label className="mt-2 font-semibold text-end">
+                      <label className="mt-2 font-semibold text-center">
                         País (WhatsApp):
                       </label>
                       <select
@@ -207,7 +195,7 @@ export const ActivarPage = () => {
                         <option value="+44">Reino Unido (+44)</option>
                         <option value="+58">Venezuela (+58)</option>
                       </select>
-                      <label className="mt-2 font-semibold text-end">
+                      <label className="mt-2 font-semibold text-center">
                         Ingrese su Número de WhatsApp:
                       </label>
                       <div className="input-group flex text-black rounded-md w-full">
@@ -227,7 +215,7 @@ export const ActivarPage = () => {
                       </div>
                     </Card>
                     <Card className="flex flex-col items-center justify-start gap-2 p-5 border-1 border-greenprimary w-full h-full">
-                      <label className="font-semibold text-end">
+                      <label className="font-semibold text-center">
                         Ingrese su ID de Roku:
                       </label>
                       <input
