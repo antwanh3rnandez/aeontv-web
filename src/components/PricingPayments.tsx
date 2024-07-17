@@ -53,7 +53,7 @@ export function PricingPayment () {
                                         <em style={{fontFamily: 'Poppins'}}>$50.00</em>
                                     </h1>
                                     <h1 className='text-3xl text-blueprimary'>
-                                        <em style={{fontFamily: 'Bungee'}}>$40.00</em>
+                                        <em style={{fontFamily: 'Bungee'}}>$25.00</em>
                                     </h1>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ export function PricingPayment () {
                                         <em style={{fontFamily: 'Poppins'}}>$1,000</em>
                                     </h1>
                                     <h1 className='text-3xl text-blueprimary'>
-                                        <em style={{fontFamily: 'Bungee'}}>$750</em>
+                                        <em style={{fontFamily: 'Bungee'}}>$450</em>
                                     </h1>
                                 </div>
                             </div>
@@ -159,7 +159,7 @@ export function PricingPayment () {
                         </div>
                         <div className='mt-4 text-center'>
                             <h1 className='text-lg font-normal'>
-                            <b>Monto</b>: <em>$750</em>
+                            <b>Monto</b>: <em>$450</em>
                             </h1>
                         </div>
                         <div className='mt-2 text-center'>
@@ -212,7 +212,7 @@ export function PricingPayment () {
                         </div>
                         <div className='mt-4 text-center'>
                             <h1 className='text-lg font-normal'>
-                            <b>Monto</b>: <em>$750</em>
+                            <b>Monto</b>: <em>$450</em>
                             </h1>
                         </div>
                         <div className='mt-2 text-center'>
