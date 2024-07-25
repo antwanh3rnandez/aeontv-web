@@ -2,6 +2,7 @@ import { Card } from "../../../components/ui/card";
 import { Footer } from "../../../components/pages/Footer";
 import { HeroPages } from "../../../components/pages/HeroPages";
 import {
+  IconAlertOctagonFilled,
   IconAlertTriangleFilled,
   IconCurrencyDollar,
   IconDownload,
@@ -56,6 +57,21 @@ export const RokuPage = () => {
                 </em>
               </h1>
               <Card className="shadow-xl p-8" style={{ fontFamily: "Poppins" }}>
+                <div className="flex flex-col items-center justify-center">
+                  <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
+                    <IconAlertOctagonFilled
+                      size={48}
+                      className="text-greenprimary"
+                    />
+                  </div>
+                  <div className="py-4 lg:mt-0 text-center lg:text-center">
+                    <h4 className="font-semibold">PASO INICIAL</h4>
+                    <h3 className="font-light">* IMPORTANTE *</h3>
+                    <p className="font-light p-4">
+                      Antes de Instalar el canal valide que la cuenta con la que va a instalar el canal sea la misma que esta registrada en su Roku, para verificar esto vaya en su Roku a Configuración {">"} Sistema {">"} Acerca de, en caso contrario si no es la misma cuenta el canal no aparecerá en su Roku luego de la instalación.
+                    </p>
+                  </div>
+                </div>
                 <div className="grid lg:grid-cols-2 items-start justify-center">
                   <div className="flex flex-col items-center justify-center">
                     <div className="border-2 border-greenprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
@@ -69,19 +85,19 @@ export const RokuPage = () => {
                         tiempo).
                         <br />
                         <div className="flex flex-wrap items-center justify-center">
-                            {codigos.map((item, index) => (
+                          {codigos.map((item, index) => (
                             <>
-                                <a
+                              <a
                                 href={`https://my.roku.com/add/${item.codigo}`}
                                 target="_blank"
                                 key={index}
                                 className="text-greenprimary"
-                                >
+                              >
                                 &bull; {item.codigo} &nbsp;
-                                </a>
-                                <br />
+                              </a>
+                              <br />
                             </>
-                            ))}
+                          ))}
                         </div>
                       </p>
                     </div>

@@ -222,6 +222,7 @@ export const ActivarPage = () => {
                         type="text"
                         name="idRoku"
                         maxLength={37} // 32 characters + 4 dashes
+                        minLength={32} // 32 characters + 4 dashes
                         value={idRoku}
                         onChange={handleChange}
                         className="border-2 border-greenprimary text-black rounded-md p-2 w-full"
